@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app_ui_setup/models/category_model.dart';
+import 'package:news_app/models/category_model.dart';
 
 import 'category_card.dart';
 
@@ -10,7 +10,7 @@ class CategoriesListView extends StatelessWidget {
 
   final List<CategoryModel> categories = const [
     CategoryModel(
-      image: 'assets/business.avif',
+      image: 'assets/business.jpg',
       categoryName: 'Business',
     ),
     CategoryModel(
@@ -30,11 +30,11 @@ class CategoriesListView extends StatelessWidget {
       categoryName: 'Technology',
     ),
     CategoryModel(
-      image: 'assets/sports.avif',
+      image: 'assets/sports.jpg',
       categoryName: 'Sports',
     ),
     CategoryModel(
-      image: 'assets/general.avif',
+      image: 'assets/general.jpg',
       categoryName: 'General',
     ),
   ];

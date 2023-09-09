@@ -1,19 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:news_app_ui_setup/views/home_view.dart';
-import 'package:dio/dio.dart';
+import 'package:news_app/views/home_view.dart';
 
-void main() {
-  getNews();
-  runApp(const NewsApp());
-}
-
-final dio = Dio();
-
-void getNews() async {
-  final response = await dio.get(
-      'https://newsapi.org/v2/everything?q=bitcoin&apiKey=1ec76f6b74774ff8b0773591e7ccf210');
-  print(response);
-}
+void main() => runApp(const NewsApp());
 
 class NewsApp extends StatelessWidget {
   const NewsApp({super.key});
